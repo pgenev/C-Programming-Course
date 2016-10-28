@@ -21,10 +21,17 @@
 
 Алгоритъм на Евклид: <br />
 	Дадени са a и b  <br />
+<<<<<<< HEAD
 			* while b ≠ 0	 <br />
 			* t = b 	 <br />
 			* b = a mod b <br />
 			* a = t <br />
+=======
+			while b ≠ 0 <br />
+			t = b 	 <br />
+			b = a mod b <br />
+			a = t <br />
+>>>>>>> 11153e82af091095f327a751dd3ed8f78c0b0aed
 	
 Резултатът е записан в "a".
 
