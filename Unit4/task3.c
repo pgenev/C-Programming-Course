@@ -1,36 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 
-char * invertString(char *str){
-	int strLen = strlen(str);
-	char invertedStr[strLen];
-	strcpy(invertedStr, str);
-	int i2 = 0;
-	for(int i=strLen-1; i >= 0; i--)
+char * reverseString(char *str){
+	int strLength = strlen(str);
+	char strDublicate[strLength];
+	strcpy(strDublicate, str);
+	int iterator1 = 0;
+	for(int i=strLength-1; i >= 0; i--)
 	{
-		//printf("%c\n", str[i]);
-		str[i2] = invertedStr[i];
-		i2++;
-		//invertedStr[i] = str[i];
+		str[iterator1] = strDublicate[i];
+		iterator1++;
 	}
 	return str;
-
-	//while(strLen != -1){
-	//	printf("%c\n", str[strLen]);
-	//	strLen--;
-	
-	//}
 }
 
 void main(){
 
-	char text[] = "Text";
-	char text2[] = "IwantToBeinverteD!";
-	char *str2 = invertString(text);
-	
-	for(int i=0; i <= strlen(text)-1; i++){
-		printf("%c\n", *str2++);
-	}
-
+	char text[] = "IwantToBeinverteD!";
+	printf("\nOriginal string: %s\n", text);	
+	reverseString(text);
+	printf("Reversed string: %s\n\n", text);
 	return;
 }
