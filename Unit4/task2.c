@@ -5,7 +5,7 @@
 #define Sorted 1
 
 
-int * bubbleSort(int *arr, int arrLength){
+void bubbleSort(int *arr, int arrLength){
 	for(int i=0; i < arrLength -1; i++){
 		for(int j=0; j < arrLength -1; j++){
 			if(arr[j] > arr[j+1]){
