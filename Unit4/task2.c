@@ -23,7 +23,7 @@ void printArray(int *arr, int arrLength, int arrStatus){
 	} else if(arrStatus == Sorted){
 		printf("\nSorted array: ");
 	}
-	for(int i=0; i < 11; i++){
+	for(int i=0; i < arrLength-1; i++){
 		printf("%d ", *arr++);
 	}
 	printf("\n\n");
