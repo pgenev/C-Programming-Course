@@ -4,7 +4,7 @@ void main(){
 
 	int firstNumber = 24;
 	int secondNumber = 6;
-
+	
 	while(secondNumber < firstNumber){
 		firstNumber -= secondNumber;
 		if(secondNumber == firstNumber){
