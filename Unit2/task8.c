@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
+
 void main(){
 
 	uintptr_t number = 249; // 1111 1001(bin)

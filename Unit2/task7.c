@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void main(){
 
 	int number = 16909060; // 0x01020304(hex)

@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void main(){
 
 	for(int number=2; number <= 7; number++){
