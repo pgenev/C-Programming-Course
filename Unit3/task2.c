@@ -47,24 +47,6 @@ void main(){
 	int number2 = 35;
 	check_number(number);
 	check_number(number2);
-
 	return;
 }
 
-/*
-def is_prime(n):
-
-    divider = 2
-    maxDivider = math.sqrt(abs(n))
-    if(n == 1):
-            return False
-
-    while divider <= maxDivider:
-
-        if(n % divider == 0):
-            return False
-
-        divider+=1
-
-    return True
-*/
