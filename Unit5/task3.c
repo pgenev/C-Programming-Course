@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdint.h>
+
 
 typedef void(*FunctionPointer)(void);
 
@@ -41,7 +41,7 @@ void main(){
 	void *arr2[] = {funcPtr1, funcPtr2, funcPtr3, funcPtr4, funcPtr5, NULL};
 	
 	// First solution
-	
+
 	for(int i=0; i < 6 ; i++){
 		if( NULL == arr[i]){
 			break;
