@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef void (*printPtr)(int);
+typedef void (*PrintPtr)(int);
 
 void print(int n){
 	for(int i=0; i < n; i++){
@@ -10,11 +10,9 @@ void print(int n){
 
 void main(){
 
-	printPtr var;
-	//printPtr *ptr1;
-	//void (*printPtr)(int);
+	PrintPtr var;
 	var = print;
-	var(2);
+	var(10);
 
 	return;
 }
