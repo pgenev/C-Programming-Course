@@ -8,7 +8,6 @@ void main(){
 
 	char sentence[] = "I am a sentence    and I    want to be read   !   ";
 	printf("\nFull string: %s\n\n", sentence);
-	int strLength = strlen(sentence);
 	char *ptr = sentence;
 	int add_quote = TRUE;
 	
