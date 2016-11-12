@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define TRUE 0
 #define FALSE 1
 
 void playGame(int switchDoors)
 {	
+	srand (time(NULL));
 	int wins = 0;
 	int winningDoor;
 	int playerChoice;
@@ -35,13 +37,10 @@ void playGame(int switchDoors)
 			}
 			continue;
 		} 
-		else if(FALSE == switchDoors)
+		if(playerChoice == winningDoor)
 		{
-			if(playerChoice == winningDoor)
-			{
-				++wins;
-				continue;
-			}
+			++wins;
+			continue;
 		}
 	}
 	
